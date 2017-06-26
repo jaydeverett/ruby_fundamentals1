@@ -1,30 +1,35 @@
-puts "How many pizzas would you like? (maximum of 2 please)"
+puts "How many pizzas do you want to order?"
 
-x = (gets.chomp).to_i
+quantity = (gets.chomp).to_i
 
-if x == 1
-  puts "How many toppings would you like on your pizza?"
+quantity.times do |num|
 
-  y = (gets.chomp).to_i
+  puts "How many toppings would you like on pizza #{num + 1}?"
 
-    puts "You have order a pizza with #{y} toppings!"
+  toppings = (gets.chomp).to_i
 
-
-  elsif x == 2
-      puts "How many toppings would you like on your first pizza?"
-
-      y = (gets.chomp).to_i
-
-      puts "How many toppings would you like on your second pizza?"
-
-      z = (gets.chomp).to_i
-
-      puts "You have ordered #{x} pizzas. Your first pizza has #{y}
-      toppings, and your second pizza has #{z} toppings!"
-
-
-  else puts "Sorry, that is not a valid number of pizzas to order"
-
-
+  puts "You have ordered a pizza with #{toppings} toppings!"
 
 end
+
+
+
+
+
+
+
+
+
+
+
+#
+# while quantity >= 1
+#
+#   puts "How many toppings would you like on pizza #{quantity}?"
+#
+#   toppings = (gets.chomp).to_i
+#
+#   quantity -= 1
+#
+# end
+#
